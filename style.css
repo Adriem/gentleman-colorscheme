@@ -1,0 +1,56 @@
+.gvim, .gvim .modal-content {
+  background-color: #1a1c1f;
+  color: #dadada !important;
+}
+
+.vim, .vim .modal-content {
+  background-color: #1c1c1c;
+  color: #dadada !important;
+}
+
+.close {
+  color: #dadada;
+  text-shadow: none;
+  border: none;
+  opacity: 1;
+}
+
+.close:hover {
+  color: #fff;
+  text-shadow: none;
+  border: none;
+  opacity: 1;
+}
+
+.thumbnail {
+  border-radius: 8px;
+  padding: 8px;
+  background:none;
+  color: #dadada !important;
+}
+
+.thumbnail:hover, .thumbnail:active {
+  text-decoration:none;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+.img-top {
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.footer {
+  font-size: 14pt;
+}
+
+a {
+  color: #5fafff;
+}
+
+a:hover {
+  color: #6fbfff;
+}

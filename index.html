@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns:http="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Gentleman Colors - VIM colorscheme</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Android webapp settings -->
+  <meta name="theme-color" content="#546eaa"> <!-- Chrome bar color -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes"> <!-- fallback for manifest.json -->
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+</head>
+<body ng-app="GentlemanApp" ng-controller="MainController" class="gvim">
+<!--ng-class="{ vim: term, gvim: !term }">-->
+
+<div class="modal fade" id="metal-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document"> <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" 
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gentleman Metal</h4>
+    </div>
+    <div class="modal-body">
+      <img src="metal.png" id="metal-modal-img">
+    </div>
+  </div></div>
+</div>
+<div class="modal fade" id="acid-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document"> <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" 
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gentleman Acid</h4>
+    </div>
+    <div class="modal-body">
+      <img src="acid.png" id="acid-modal-img">
+    </div>
+  </div></div>
+</div>
+<div class="modal fade" id="ghost-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document"> <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" 
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gentleman Ghost</h4>
+    </div>
+    <div class="modal-body">
+      <img src="ghost.png" id="ghost-modal-img">
+    </div>
+  </div></div>
+</div>
+<div class="modal fade" id="warm-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document"> <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" 
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gentleman Warm</h4>
+    </div>
+    <div class="modal-body">
+      <img src="warm.png" id="warm-modal-img">
+    </div>
+  </div></div>
+</div>
+<div class="modal fade" id="magic-modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document"> <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" 
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gentleman Magic</h4>
+    </div>
+    <div class="modal-body">
+      <img src="magic.png" id="magic-modal-img">
+    </div>
+  </div></div>
+</div>
+
+<div class="container text-center">
+  
+  <div class="row">
+    <h1>Gentleman colors<br><small>VIM colorscheme</small></h1>
+    <p class="lead col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+      Gentleman colors is a dark, low contrast and terminal-friendly color
+      scheme for VIM. Available in multiple flavours!
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-lg-4">
+      <a href="#" class="thumbnail" data-toggle="modal" data-target="#metal-modal">
+        <h5>Metal</h5>
+        <img class="img-responsive" src="preview-metal.png" id="metal-img">
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="#" class="thumbnail" data-toggle="modal" data-target="#warm-modal">
+        <h5>Warm</h5>
+        <img class="img-responsive" src="preview-warm.png" id="warm-img">
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="#" class="thumbnail" data-toggle="modal" data-target="#ghost-modal">
+        <h5>Ghost</h5>
+        <img class="img-responsive" src="preview-ghost.png" id="ghost-img">
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4 col-lg-offset-2">
+      <a href="#" class="thumbnail" data-toggle="modal" data-target="#acid-modal">
+        <h5>Acid</h5>
+        <img class="img-responsive" src="preview-acid.png" id="acid-img">
+      </a>
+    </div>
+    <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-0">
+      <a href="#" class="thumbnail" data-toggle="modal" data-target="#magic-modal">
+        <h5>Magic</h5>
+        <img class="img-responsive" src="preview-magic.png" id="magic-img">
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <label class="radio-inline">
+      <input type="radio" name="scheme-version" id="normal-version-option" 
+          value="normal" checked> Normal version 
+      </label>
+    <label class="radio-inline">
+      <input type="radio" name="scheme-version" id="colorful-version-option"
+          value="accent"> Colorful version
+    </label> 
+  </div>
+  
+  <div class="row">
+    <p class="footer col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+      To install these color schemes just download them from 
+      <a href="https://github.com/Adriem/gentleman-colorscheme">here</a>
+      and copy them into a folder named 'colors' inside your vimrc folder
+    </p>
+    <p class="footer col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+      If you have any suggestions, feel free to email me at
+      <a href="mailto:admoreno@outlook.com">admoreno@outlook.com</a>.
+      And don't forget to check my other projects at
+      <a href="http://adriem.noip.me">adriem.noip.me</a>! :)
+  </div>
+
+</div>
+
+<script>
+  $(function() {
+    $('input:radio[name=scheme-version]').change(function() {
+      if (this.value == 'normal') {
+        $('#metal-img').attr('src', 'preview-metal.png');
+        $('#acid-img').attr('src', 'preview-acid.png');
+        $('#magic-img').attr('src', 'preview-magic.png');
+        $('#ghost-img').attr('src', 'preview-ghost.png');
+        $('#warm-img').attr('src', 'preview-warm.png');
+        $('#metal-modal-img').attr('src', 'metal.png');
+        $('#acid-modal-img').attr('src', 'acid.png');
+        $('#magic-modal-img').attr('src', 'magic.png');
+        $('#ghost-modal-img').attr('src', 'ghost.png');
+        $('#warm-modal-img').attr('src', 'warm.png');
+      }
+      else if (this.value == 'accent') {
+        $('#metal-img').attr('src', 'preview-metal-accent.png');
+        $('#acid-img').attr('src', 'preview-acid-accent.png');
+        $('#magic-img').attr('src', 'preview-magic-accent.png');
+        $('#ghost-img').attr('src', 'preview-ghost-accent.png');
+        $('#warm-img').attr('src', 'preview-warm-accent.png');
+        $('#metal-modal-img').attr('src', 'metal-accent.png');
+        $('#acid-modal-img').attr('src', 'acid-accent.png');
+        $('#magic-modal-img').attr('src', 'magic-accent.png');
+        $('#ghost-modal-img').attr('src', 'ghost-accent.png');
+        $('#warm-modal-img').attr('src', 'warm-accent.png');
+      }
+    })
+  })
+</script>
+
+</body>
+</html>
